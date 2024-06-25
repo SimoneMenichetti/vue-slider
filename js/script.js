@@ -74,11 +74,6 @@ createApp ({
 }).mount('#app');
 
 
-
-
-
-
-
 //  [
 // {
 //         image: 'img/01.webp',

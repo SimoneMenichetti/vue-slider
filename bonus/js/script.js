@@ -34,10 +34,17 @@ createApp ({
                     title: "Marvel's Avengers",
                     text: 'Marvel\'s Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.',
                 }
-            ]
-        }
+            ],
+
+            // CREAZIONE VARIABILE PER INIZIALIZZAZIONE autoplay , con definizione di inizializzazione null in modo da impostare l'intervallo quando lo attiveremo
+            autoplayIntervallo: null
+        };
         
     },
+    // utilizzo di mounted lifecycle hooks per inizializzare l'autoplay al momento della fine del caricamento corretto degli elementi che compongolo il DOM
+    mounted() {
+        this.startAutoplay();
+      },
 
     methods:{
         // nextSlides e prevSlides: Aggiornano activeImage per mostrare la Slide successiva o precedente. Gestiscono anche i casi limite per ciclare attraverso le diapositive.
