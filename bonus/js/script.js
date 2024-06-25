@@ -100,9 +100,9 @@ createApp ({
             this.stopAutoplay();
           },
         // richiamiamo il restart dell autoplay al momento dell uscita del mouse dalle thumb
-          handleMouseLeave() {
+        handleMouseLeave() {
             this.restartAutoplay();
-          }
+        }
     }
 }).mount('#app');
 
