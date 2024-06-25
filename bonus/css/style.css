@@ -42,7 +42,7 @@
 .thumb {
     height: calc((300px) / 5);
     opacity: 0.5;
-    cursor: pointer; /* Cambia il cursore quando passi sopra */
+    cursor: pointer; 
     transition: opacity 0.3s ease;
 }
 
