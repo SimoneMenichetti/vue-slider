@@ -95,6 +95,13 @@ createApp ({
             this.stopAutoplay();
             this.startAutoplay();
         },
+
+        handleMouseEnter() {
+            this.stopAutoplay();
+          },
+          handleMouseLeave() {
+            this.restartAutoplay();
+          }
     }
 }).mount('#app');
 

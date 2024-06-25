@@ -32,7 +32,9 @@
                         <!-- 3 utilizzo di setactive slide al click per gestire l aggiornamento dell immagine attivata -->
                     <div class="thumb" v-for="(slide, index) in slides"
                         :key="index" :class="{ active: index === activeImage }"
-                        @click="setActiveSlide(index)">
+                        @click="setActiveSlide(index)"
+                        @mouseenter="handleMouseEnter" 
+                        @mouseleave="handleMouseLeave">
                       <img :src="slide.image" :alt="slide.title" />
                     </div>
                 </div>
