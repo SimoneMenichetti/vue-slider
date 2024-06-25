@@ -95,10 +95,11 @@ createApp ({
             this.stopAutoplay();
             this.startAutoplay();
         },
-
+        // richiamiamo lo stop autoplay al momnento dell entrata del mouse su le thumb
         handleMouseEnter() {
             this.stopAutoplay();
           },
+        // richiamiamo il restart dell autoplay al momento dell uscita del mouse dalle thumb
           handleMouseLeave() {
             this.restartAutoplay();
           }

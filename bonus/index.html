@@ -30,6 +30,7 @@
                         <!-- 1 utilizzo v for per generare dinamicamente le thumb delle slide prese dall'array slides. -->
                         <!-- 2 aggiungiamo dinamicamente la classe active a seconda dell indice in cui ci troviamo -->
                         <!-- 3 utilizzo di setactive slide al click per gestire l aggiornamento dell immagine attivata -->
+                        <!-- 4 aggiunta degli eventi all hover del mouse per l entrate e l uscita dall'area hover -->
                     <div class="thumb" v-for="(slide, index) in slides"
                         :key="index" :class="{ active: index === activeImage }"
                         @click="setActiveSlide(index)"
